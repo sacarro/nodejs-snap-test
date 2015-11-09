@@ -35,8 +35,6 @@ _This assumes a standard Ubuntu development environment where .profile adds $HOM
     });
     ```
     
-10. mkdir package 
-11. cd package
 12. mkdir meta
 13. cd meta
 14. vi package.yaml
@@ -63,8 +61,8 @@ _This assumes a standard Ubuntu development environment where .profile adds $HOM
     Simple microservice that responds with "hello world"
     ```
     
-16. cd ../../
-17. snappy build package
+16. cd ../
+17. snappy build
 18. vi Vagrantfile # assumes vagrant setup for ubuntu core snappy 
     
     ```
