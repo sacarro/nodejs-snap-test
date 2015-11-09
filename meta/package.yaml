@@ -1,0 +1,14 @@
+name: nodejs-snap-test
+vendor: Sam Carroll <samuel.carroll@inficon.com>
+architecture: [amd64, armhf]
+version: 0.0.1
+services:
+ - name: microservice
+   description: "A simple example of a microservice."
+   start: start-service.sh
+   ports:
+      external:
+         ui:
+            port: 6565/tcp
+            negotiable: no
+
